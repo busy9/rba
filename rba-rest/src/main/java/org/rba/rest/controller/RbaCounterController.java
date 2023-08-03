@@ -5,10 +5,12 @@ import org.rba.rest.persistence.RRepository;
 import org.rba.rest.persistence.RbaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class RbaController {
+@RequestMapping("/rest/count")
+public class RbaCounterController {
 
     @Autowired
     private RbaRepository rbaRepository;
